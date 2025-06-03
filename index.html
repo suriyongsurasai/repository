@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ฟอร์มแจ้งซ่อม</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📋 ฟอร์มแจ้งซ่อม</h1>
+    <form id="repair-form">
+       
+      <label for="name">👤 ชื่อผู้แจ้ง:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="department">🏢 กลุ่มงาน:</label>
+      <input type="text" id="department" name="department" required>
+
+      <label for="issue">🛠️ ปัญหาเครื่อง:</label>
+      <textarea id="issue" name="issue" required></textarea>
+
+      <label for="image">📷 แนบรูปภาพ (สูงสุด 5 รูป):</label>
+        <input type="file" id="image" name="image" accept="image/*" multiple>
+        <div id="preview" class="preview-container"></div>
+
+      <button type="submit">🚀 ส่งแจ้งซ่อม</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
