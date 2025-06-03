@@ -50,3 +50,6 @@ document.getElementById('repair-form').addEventListener('submit', function (e) {
       alert('เกิดข้อผิดพลาด: ' + error.message);
     });
 });
+function doGet(e) {
+  return HtmlService.createHtmlOutput("ระบบแจ้งซ่อม พร้อมรับข้อมูลจากฟอร์มแล้ว 😊");
+}
