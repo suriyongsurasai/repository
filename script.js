@@ -37,7 +37,7 @@ document.getElementById('repair-form').addEventListener('submit', function (e) {
     return;
   }
 
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzhAA5AU8twuYcX9QCh9kg0yeO698xVXL237PVf_co/dev'; // เปลี่ยนตามจริง
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz02UmF_cBvwUVOHDO9u8eGk5dsMFI270vCEelsd7UBXLx77K2OwGvIJl4C2xwOSn8g/exec'; // เปลี่ยนตามจริง
 
   fetch(scriptURL, { method: 'POST', body: formData })
     .then(response => response.text())
